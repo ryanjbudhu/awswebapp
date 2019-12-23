@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Table } from 'semantic-ui-react';
+import { Table } from 'semantic-ui-react';
 
 function getFormattedTime(time) {
 	const hour = Math.floor(time/3600);
@@ -35,7 +35,6 @@ export default function RunInfo(props) {
 			)}
 			
 			{splits.length > 0 ? (
-			 <Segment className="short-table">
 				<Table selectable size="large">
 					<Table.Header>
 						<Table.Row>
@@ -52,7 +51,6 @@ export default function RunInfo(props) {
 					))}
 					</Table.Body>
 				</Table>
-			 </Segment>
 			) : null}
 		</div>
 	);

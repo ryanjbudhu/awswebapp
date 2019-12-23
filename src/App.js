@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Segment } from 'semantic-ui-react';
 import RunForm from './RunForm';
 import RunInfo from './RunInfo';
 import '../node_modules/semantic-ui-css/semantic.min.css'
@@ -51,9 +52,11 @@ class App extends Component {
             {/* Form Component */}
           </div>
           <div className="App-column-feed">
+          <Segment className="short-table">
             <RunInfo
               runInfo={this.state}
             />
+            </Segment>
             {/* Run feed Component */}
           </div>
         </div>
