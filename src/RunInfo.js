@@ -26,7 +26,7 @@ export default function RunInfo(props) {
 				<h2>
 					Fill out the form!
 				</h2>
-			) : (<React.Fragment><h2>{props.runInfo.mileage} miles{/*props.runInfo.unit*/} run</h2>
+			) : (<React.Fragment><h2>{props.runInfo.mileage} mile{/*props.runInfo.unit*/} run</h2>
 
 				<p>Total Time: {timeInSeconds}</p>
 				<p>Average Time: {Math.floor(avgMile)}</p>
