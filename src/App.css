@@ -65,10 +65,6 @@
   min-height: 55vh;
 }
 
-.segment {
-  overflow: auto;
-}
-
 .short-table {
   height: 55vh;
   overflow: auto;
